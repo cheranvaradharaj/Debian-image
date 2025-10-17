@@ -35,7 +35,7 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ${{ inputs.BASE_IMAGE_NAME}}:latest # Replace with your image tag
+          tags: ${{ inputs.BASE_IMAGE_NAME}}-v1 # Replace with your image tag
 
 
  
