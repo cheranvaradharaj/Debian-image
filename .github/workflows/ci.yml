@@ -36,7 +36,6 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ${{ inputs.BASE_IMAGE_NAME}}:latest # Replace with your image tag
-          build-args: |
-            TZ=Europe/London # Example timezone
+
 
  
