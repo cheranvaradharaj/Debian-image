@@ -1,5 +1,5 @@
 ARG base_img
-FROM $base_img
+FROM ${base_img}
 ARG timezone=Europe/London
 ARG uid=200
 
