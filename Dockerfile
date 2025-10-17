@@ -1,4 +1,5 @@
-FROM debain:trixie-slim
+FROM debian:trixie-slim
+
 ARG timezone=Europe/London
 ARG uid=200
 
