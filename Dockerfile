@@ -1,5 +1,4 @@
-ARG base_img
-FROM ${base_img}
+FROM debain:trixie-slim
 ARG timezone=Europe/London
 ARG uid=200
 
