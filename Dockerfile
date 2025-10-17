@@ -8,6 +8,9 @@ ARG uid=200
 RUN ln -snf /usr/share/zoneinfo/$timezone  /etc/localtime && \
     echo $timezone > /etc/timezone
 
+COPY entrypoint.sh /opt/entrypoint.sh
+
+
 RUN sed -e 's/set\ -ex/set\  -e/g' -i /opt/entrypoint.sh
 
 ENTRYPOINT [ "/opt/entrypoint.sh" ]
